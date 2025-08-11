@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Find Your Film</title>
+</head>
+
+<body class="bg-black text-white flex justify-center items-center h-screen">
+
+  <div class="h-5/6 w-3/5 flex flex-col gap-20 bg-gray-900 overflow-hidden rounded-md md:w-[450px]">
+    <header 
+        class="bg-[url(images/mv-img.png)] bg-center bg-no-repeat h-48">
+
+        <div class="justify-self-center w-full justify-evenly flex m-10 
+                py-6 gap-12 items-baseline text-black">
+            <h1 class="text-4xl font-bold">Find your film</h1>
+            <nav>
+                <a class="font-semibold" href="watchlist.html">My Watchlist</a>
+            </nav> 
+        </div>
+        <form class="justify-self-center flex" id="submit-search">
+            <i class="fa-solid fa-magnifying-glass text-gray-300
+            relative left-6 top-3 cursor-pointer"></i>
+            <input 
+                class="rounded-l-md px-12 py-2 bg-gray-700" 
+                type="text" 
+                placeholder="Blade Runner" 
+                name="search" 
+                id="movie-name"/>
+            <button 
+                class="bg-gray-500 px-6 py-2 rounded-r-md" 
+                type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <section class="text-center justify-self-center mt-10 w-4/5 text-gray-700">  
+                <i class="fa-solid fa-film text-6xl"></i>
+                <p>Start exploring</p>                     
+        </section>
+    </main>
+
+  </div> 
+  <script type="module" src="script.js"></script>
+  <script type="module" src="render.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Watchlist</title>
+</head>
+
+<body class="bg-black text-white flex justify-center items-center h-screen">
+
+  <div class="h-5/6 w-3/5 flex flex-col gap-y-14 bg-gray-900 overflow-hidden rounded-md md:w-[450px]">
+    <header 
+        class="bg-[url(images/mv-img.png)] bg-center bg-no-repeat h-48">
+
+        <div class="justify-self-center w-full justify-evenly flex m-10 
+                py-6 gap-12 items-baseline text-black">
+            <h1 class="text-4xl font-bold">My Watchlist</h1>
+            <nav>
+                <a class="font-semibold" href="index.html">Search for movies</a>
+            </nav> 
+        </div>
+    </header>
+    <main id="watchlist-display" class="px-4 overflow-y-auto scrollbar-track-gray-700">
+        <section class ="flex flex-col text-center justify-self-center w-4/5 mt-10 text-gray-700">
+            
+            <p>Your watchlist is looking a little empty...</p>
+            <div class="justify-center flex">
+              <i class="fas fa-plus-circle text-2xl text-white"></i>
+              <a class="text-white" href="index.html">Let’s add some movies!</a>
+            </div>
+            
+        </section>
+    </main>
+
+  </div>
+  <script type="module" src="script2.js"></script> 
+</body>
+</html>
